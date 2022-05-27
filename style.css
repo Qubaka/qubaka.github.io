@@ -1,0 +1,56 @@
+:root{
+  --myBodyBackground: #fefafa;
+}
+
+body{
+    font-family:'Trebuchet MS';
+    display: flex;
+    justify-content: center;
+    background: var(--myBodyBackground);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    width: 30vw;
+}
+h1{
+    font-size: 50px;
+}
+div[data-secret]{
+    display: none;
+}
+div img{
+  display: none;
+    position: fixed;
+    left: 200vw;
+    top: -200vh;
+}
+img{
+    position: fixed !important;
+    top: -200vh !important;
+}
+div div{
+    position: fixed;
+    top: -200vh;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid black;
+  border-radius: .2em;
+  max-width: 75vw;
+  min-width: 50vw
+}
+
+fieldset label {
+  margin: 1ch 0 .6ch;
+}
+
+.correct {
+  border: 1px solid greenyellow;
+}
